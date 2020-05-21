@@ -91,3 +91,7 @@ If the installation was successful, you should be able to run the following comm
 ## Testing
 
     $ npm test
+
+## Contributing
+
+  PRs welcome! 
