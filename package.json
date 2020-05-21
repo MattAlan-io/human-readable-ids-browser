@@ -1,0 +1,25 @@
+{
+  "name": "human-readable-ids-browser",
+  "version": "1.0.0",
+  "description": "Generate human readable ids in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattAlan-io/human-readable-ids-browser.git"
+  },
+  "keywords": [
+    "human-readable-ids",
+    "id",
+    "ids",
+    "readable"
+  ],
+  "author": "Matt Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattAlan-io/human-readable-ids-browser/issues"
+  },
+  "homepage": "https://github.com/MattAlan-io/human-readable-ids-browser#readme"
+}
