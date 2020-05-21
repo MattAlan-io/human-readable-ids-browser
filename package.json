@@ -1,7 +1,7 @@
 {
   "name": "human-readable-ids-browser",
-  "version": "1.0.1",
-  "description": "Generate human readable ids in the browser",
+  "version": "1.1.0",
+  "description": "Configurable human readable id generator for the browser",
   "main": "index.js",
   "types": "lib/index.d.ts",
   "scripts": {

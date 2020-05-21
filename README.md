@@ -11,6 +11,43 @@ To generate, we use json files containing animals and adjectives (values/animals
 
 This library was based on the great work at https://git.coolaj86.com/coolaj86/human-readable-ids.js#readme and follows the same principles - but re-written for the browser instead of requiring bower to transpile.
 
+This library is compatible with TypeScript and JavaScript. Type definitions are included.
+
+## Configuration
+
+### Simple:
+
+```typescript
+  const id = getID();
+  // -> angry-dodo
+```
+
+### Custom delimiter:
+
+A delimiter can be passed to the configuration options:
+
+```typescript
+  const id = getID({ delimiter: '^' });
+  // -> angry^dodo
+
+  const id = getID({ delimiter: ' ' });
+  // -> angry dodo
+```
+
+### With number range:
+
+A number range in the format [min, max] can be passed to the withNumberRange configuration option.
+
+The lower bound (min) is inclusive, and the upper bound (max) is exclusive.
+
+```typescript
+  const id = getID({ withNumberRange: [0, 100]});
+  // -> angry-dodo-0 up to angry-dodo-99 (not inc 100)
+
+  const id = getID({ delimiter: withNumberRange: [0, 1000]});
+  // -> angry dodo-0 up to angry-dodo-999 (not inc 1000)
+```
+
 ---
 ## Requirements
 
