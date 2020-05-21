@@ -1,10 +1,16 @@
 {
   "name": "human-readable-ids-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate human readable ids in the browser",
   "main": "index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test",
+    "version": "git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -14,12 +20,18 @@
     "human-readable-ids",
     "id",
     "ids",
-    "readable"
+    "readable id"
   ],
   "author": "Matt Davis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MattAlan-io/human-readable-ids-browser/issues"
   },
-  "homepage": "https://github.com/MattAlan-io/human-readable-ids-browser#readme"
+  "homepage": "https://github.com/MattAlan-io/human-readable-ids-browser#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  }
 }
